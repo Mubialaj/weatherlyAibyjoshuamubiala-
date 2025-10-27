@@ -1,0 +1,158 @@
+/* Base styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #7f00ff, #e100ff); /* Purple gradient */
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  color: #fff;
+  transition: background 0.5s ease;
+  text-align: center;
+}
+
+/* Welcome section */
+.welcome {
+  padding: 2rem;
+  width: 90%;
+  max-width: 700px;
+}
+
+/* Container */
+.container {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  margin-top: 1rem;
+}
+
+/* Heading */
+h1 {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin: 0.5rem 0 1.5rem;
+  font-size: 1rem;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+input {
+  flex: 1 1 200px;
+  padding: 0.5rem;
+  border-radius: 12px;
+  border: 2px solid #fff;
+  outline: none;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+button[type="submit"] {
+  background: #ff4e8c; /* Complementary pink */
+  color: #fff;
+}
+
+button[type="submit"]:hover {
+  background: #ff2164;
+}
+
+#resetBtn {
+  background: #6a0dad; /* Darker complementary purple */
+  color: #fff;
+}
+
+#resetBtn:hover {
+  background: #480780;
+}
+
+/* Weather List */
+.weather-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.weather-card {
+  background: rgba(255,255,255,0.2);
+  border-radius: 15px;
+  padding: 1rem;
+  width: 45%;
+  min-width: 250px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  position: relative;
+  transition: transform 0.3s;
+}
+
+.weather-card:hover {
+  transform: translateY(-5px);
+}
+
+.weather-card h2 {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+
+.weather-card img {
+  width: 60px;
+  height: 60px;
+}
+
+.weather-card p {
+  margin: 0.3rem 0;
+}
+
+.wear-suggestion {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+/* Remove city button */
+.remove-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  border: none;
+  background: #ff0000;
+  color: #fff;
+  padding: 0.2rem 0.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Footer */
+.footer {
+  font-size: 0.8rem;
+  color: #fff;
+  margin-top: 1rem;
+}
+
+.footer a {
+  color: #ff4e8c;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
